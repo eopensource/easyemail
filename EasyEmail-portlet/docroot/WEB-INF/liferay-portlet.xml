@@ -5,6 +5,9 @@
 	<portlet>
 		<portlet-name>EasyEmail</portlet-name>
 		<icon>/icon.png</icon>
+		<configuration-action-class>com.java.easyemail.configuration.ConfigurationActionImpl</configuration-action-class>
+		<preferences-unique-per-layout>false</preferences-unique-per-layout>
+		<preferences-owned-by-group>false</preferences-owned-by-group>
 		<header-portlet-css>/css/main.css</header-portlet-css>
 		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
 		<css-class-wrapper>EasyEmail-portlet</css-class-wrapper>
