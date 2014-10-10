@@ -16,15 +16,14 @@ public class ConfigurationActionImpl extends DefaultConfigurationAction {
 
 		super.processAction(portletConfig, actionRequest, actionResponse);
 		PortletPreferences prefs = actionRequest.getPreferences();
-		String server = prefs.getValue("server","true");
-		String port = prefs.getValue("port","true");
-		String username = prefs.getValue("uname","true");
-		String password = prefs.getValue("pass","true");
+		String server = prefs.getValue("server","");
+		String port = prefs.getValue("port","");
+		String username = prefs.getValue("uname","");
+		String password = prefs.getValue("pass","");
 		prefs.setValue("server", server);
 		prefs.setValue("port", port);
 		prefs.setValue("uname", username);
 		prefs.setValue("pass", password);
 		prefs.store();
-		System.out.println(server+" "+port+" "+username+" "+password);
 	}
 }
