@@ -3,6 +3,7 @@
 <liferay-ui:error key="error-key" message="Enter all the values in configuration." />
 <liferay-ui:success key="success" message="Message sent successfully." />
 <liferay-ui:error key="error-key1" message="Enter value for all the fields below." />
+<liferay-ui:error key="lesssecureapps" message="Please review your configuration." />
 <liferay-portlet:actionURL name="processEmail" var="emailURL"/>
 <aui:form action="<%=emailURL%>" method="post">
 <aui:input name="to" label="To"/><br/>

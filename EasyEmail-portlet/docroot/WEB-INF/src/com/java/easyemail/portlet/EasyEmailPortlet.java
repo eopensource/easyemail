@@ -44,7 +44,7 @@ public class EasyEmailPortlet extends MVCPortlet{
 				new Mailer(server, Integer.valueOf(port), username, password,TransportStrategy.SMTP_TLS).sendMail(email);
 				SessionMessages.add(actionRequest, "success");
 			} catch (Exception e) {
-				SessionMessages.add(actionRequest, "lesssecureapps");
+				SessionErrors.add(actionRequest, "lesssecureapps");
 			}
 		}
 	}
