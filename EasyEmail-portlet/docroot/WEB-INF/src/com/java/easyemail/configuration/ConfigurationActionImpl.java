@@ -9,7 +9,6 @@ import com.liferay.portal.kernel.portlet.DefaultConfigurationAction;
 
 public class ConfigurationActionImpl extends DefaultConfigurationAction {
 
-	@Override
 	public void processAction(PortletConfig portletConfig,
 			ActionRequest actionRequest, ActionResponse actionResponse)
 			throws Exception {
